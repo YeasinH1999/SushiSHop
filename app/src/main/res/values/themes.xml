@@ -2,8 +2,9 @@
 <resources>
 
     <style name="Theme.SushiSHop" parent="android:Theme.Material.Light.NoActionBar" >
-        <item name="android:statusBarColor">@color/colorRed</item>
+        <item name="android:windowTranslucentStatus">false</item>
         <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
 
     </style>
 </resources>

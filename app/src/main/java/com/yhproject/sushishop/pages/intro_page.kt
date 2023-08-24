@@ -45,7 +45,7 @@ fun IntroPage(modifier: Modifier = Modifier, navController: NavController) {
         modifier = modifier
             .background(color = colorRed)
             .fillMaxSize()
-            .padding(all = 24.dp)
+            .padding(all = 20.dp)
     ){
 
         // shop name ---
@@ -56,7 +56,7 @@ fun IntroPage(modifier: Modifier = Modifier, navController: NavController) {
             color = Color.White,
         )
 
-        Spacer(modifier = modifier.height(height = 24.dp))
+        Spacer(modifier = modifier.height(height = 20.dp))
 
         // icon ---
         Box (
@@ -67,7 +67,7 @@ fun IntroPage(modifier: Modifier = Modifier, navController: NavController) {
             Image(painter = painterResource(id = R.drawable.salmon_eggs), contentDescription = "")
         }
 
-        Spacer(modifier = modifier.height(height = 24.dp))
+        Spacer(modifier = modifier.height(height = 20.dp))
 
         // title ---
         Text(
@@ -114,10 +114,10 @@ fun IntroPage(modifier: Modifier = Modifier, navController: NavController) {
                     contentDescription = "",
                     tint = Color.White,
                 )
-                
             }
-            
         }
+
+        Spacer(modifier = modifier.height(height = 10.dp))
 
     }
 
