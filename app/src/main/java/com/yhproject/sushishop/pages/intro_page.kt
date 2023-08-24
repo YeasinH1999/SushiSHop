@@ -49,25 +49,31 @@ fun IntroPage(modifier: Modifier = Modifier, navController: NavController) {
     ){
 
         // shop name ---
-        Text(
-            text = "SUSHI MAN",
-            style = TextStyle(fontSize = 28.sp),
-            fontFamily = FontFamily.SansSerif,
-            color = Color.White,
-        )
-
-        Spacer(modifier = modifier.height(height = 20.dp))
+        Box(
+            modifier.fillMaxWidth(),
+            contentAlignment = Center
+        ){
+            Text(
+                text = "SUSHI MAN",
+                style = TextStyle(fontSize = 28.sp),
+                fontFamily = FontFamily.SansSerif,
+                color = Color.White,
+            )
+        }
 
         // icon ---
         Box (
             modifier
-                .padding(50.dp)
+                .padding(20.dp)
                 .align(alignment = CenterHorizontally)
         ){
-            Image(painter = painterResource(id = R.drawable.salmon_eggs), contentDescription = "")
+            Image(
+                painter = painterResource(id = R.drawable.salmon_eggs),
+                contentDescription = "",
+                modifier.height(250.dp)
+                    .width(300.dp)
+                )
         }
-
-        Spacer(modifier = modifier.height(height = 20.dp))
 
         // title ---
         Text(
@@ -77,7 +83,6 @@ fun IntroPage(modifier: Modifier = Modifier, navController: NavController) {
             color = Color.White,
         )
 
-        Spacer(modifier = modifier.height(height = 10.dp))
 
         // subtitle ---
         Text(
@@ -85,8 +90,6 @@ fun IntroPage(modifier: Modifier = Modifier, navController: NavController) {
             color = colorGrey,
             lineHeight = 30.sp
         )
-
-        Spacer(modifier = modifier.height(height = 20.dp))
 
         // get started button ---
         Box (
